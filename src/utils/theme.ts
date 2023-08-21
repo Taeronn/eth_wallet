@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material'
-import type {} from '@mui/lab/themeAugmentation'
 
 const COLOR = {
 	BG: '#252422',
@@ -12,6 +11,9 @@ const COLOR = {
 export { COLOR }
 
 const theme = createTheme({
+	palette: {
+		mode: 'dark',
+	},
 	components: {
 		MuiButton: {
 			variants: [
@@ -33,6 +35,26 @@ const theme = createTheme({
 						'&:hover': {
 							backgroundColor: COLOR.secondary,
 						},
+					},
+				},
+			],
+		},
+		MuiIconButton: {
+			variants: [
+				{
+					props: {},
+					style: {
+						color: COLOR.quaternary,
+					},
+				},
+			],
+		},
+		MuiTextField: {
+			variants: [
+				{
+					props: {},
+					style: {
+						color: COLOR.quaternary,
 					},
 				},
 			],

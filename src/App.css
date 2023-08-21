@@ -5,13 +5,14 @@
 .App {
 	display: flex;
 	width: 575px;
-	min-height: 90vh;
-	border: 2px solid lightblue;
+	min-height: 580px;
+	max-height: 90vh;
+	border: 2px solid #f24b4b;
 	margin: 2rem auto;
 }
 
 .wallet-wrapper {
-	padding: 2rem;
+	padding: 1.5rem;
 	width: 100%;
 	min-height: 100%;
 }
@@ -21,7 +22,29 @@
 	text-align: center;
 }
 
-.btn-container {
+.start-btn-container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon-button {
+	display: flex;
+	justify-content: center;
+	width: 100px;
+}
+
+.mnemonic-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 100px;
+}
+
+.mnemonic-container {
+	margin: 10px;
 }

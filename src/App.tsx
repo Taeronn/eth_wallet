@@ -3,13 +3,15 @@ import './App.css'
 import StartWindow from './pages/StartWindow'
 import AccountCreate from './pages/AccountCreate'
 import AccountImport from './pages/AccountImport'
+import Home from './pages/Home'
 
 function App() {
 	return (
 		<div className='App'>
 			<BrowserRouter>
 				<Routes>
-					<Route path='/' element={<StartWindow />} />
+					<Route path='/' element={<Home />} />
+					<Route path='/start' element={<StartWindow />} />
 					<Route path='/create' element={<AccountCreate />} />
 					<Route path='/import' element={<AccountImport />} />
 				</Routes>
