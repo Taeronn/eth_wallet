@@ -13,32 +13,15 @@ export { COLOR }
 const theme = createTheme({
 	palette: {
 		mode: 'dark',
+		primary: {
+			main: COLOR.primary,
+			contrastText: COLOR.quaternary,
+		},
+		secondary: {
+			main: COLOR.quaternary,
+		},
 	},
 	components: {
-		MuiButton: {
-			variants: [
-				{
-					props: { variant: 'outlined' },
-					style: {
-						borderColor: COLOR.primary,
-						color: COLOR.primary,
-						'&:hover': {
-							borderColor: COLOR.tertiary,
-						},
-					},
-				},
-				{
-					props: { variant: 'contained' },
-					style: {
-						backgroundColor: COLOR.primary,
-						color: COLOR.quaternary,
-						'&:hover': {
-							backgroundColor: COLOR.secondary,
-						},
-					},
-				},
-			],
-		},
 		MuiIconButton: {
 			variants: [
 				{
@@ -49,12 +32,15 @@ const theme = createTheme({
 				},
 			],
 		},
-		MuiTextField: {
+		MuiFormControl: {
 			variants: [
 				{
 					props: {},
 					style: {
-						color: COLOR.quaternary,
+						width: '100%',
+						'&:hover': {
+							borderColor: COLOR.quaternary,
+						},
 					},
 				},
 			],

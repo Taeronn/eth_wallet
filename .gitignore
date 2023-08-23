@@ -25,3 +25,5 @@ dist-ssr
 
 SSH_KEY
 SSH_KEY.pub
+
+.env

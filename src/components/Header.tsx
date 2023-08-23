@@ -10,7 +10,7 @@ const Header = ({ back = '/' }: { back?: string }) => {
 		<div className='header'>
 			<div className='icon-button'>
 				{location.pathname !== '/' && (
-					<IconButton onClick={() => navigate(back)}>
+					<IconButton onClick={() => navigate(back)} color='primary'>
 						<ArrowBack />
 					</IconButton>
 				)}

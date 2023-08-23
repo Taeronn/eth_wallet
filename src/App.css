@@ -13,6 +13,7 @@
 
 .wallet-wrapper {
 	padding: 1.5rem;
+	padding-bottom: 2.5rem;
 	width: 100%;
 	min-height: 100%;
 }
@@ -47,4 +48,9 @@
 
 .mnemonic-container {
 	margin: 10px;
+}
+
+.import-form {
+	display: flex;
+	flex-direction: column;
 }

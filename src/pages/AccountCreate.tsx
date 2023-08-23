@@ -38,7 +38,7 @@ const AccountCreate = () => {
 			</div>
 			<div
 				className='start-btn-container'
-				style={{ justifyContent: 'flex-start' }}
+				style={{ justifyContent: 'flex-start', margin: 10 }}
 			>
 				<Link to='/'>
 					<Button
@@ -51,8 +51,9 @@ const AccountCreate = () => {
 						Continue
 					</Button>
 				</Link>
+
 				<Button
-					variant='contained'
+					variant='outlined'
 					onClick={() => {
 						navigator.clipboard.writeText(mnemonic)
 					}}
