@@ -5,6 +5,8 @@ import { generateMnemonic } from '../utils/walletUtils'
 import MnemonicContainer from '../components/MnemonicContainer'
 import { Link, useNavigate } from 'react-router-dom'
 
+// TODO: Add Redux
+
 const AccountCreate = () => {
 	const navigate = useNavigate()
 	const mnemonicLocal: string | null = localStorage.getItem('walletMnemonic')
